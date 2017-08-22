@@ -1,0 +1,24 @@
+// practico funciones ejercicio 9
+//convertir de binarion a decimal
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <cmath>
+
+using namespace std;
+int convertir(int n);
+void main()
+{
+	int n,dec;
+	do{
+	cout << "Introduzca un numero binario: " << endl;
+	cin >> n ;
+	}while(((n%10) != 1) && ((n%10) != 0));
+	dec = convertir(n);
+	getch();
+}
+int convertir(int n)
+{
+
+}
