@@ -1,0 +1,36 @@
+// practico funciones ejercicio 5
+//sistema de ecuaciones lineal
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <cmath>
+
+using namespace std;
+void sistema(float a,float b,float c,float d,float e,float f,float &X,float &Y);
+void main()
+{
+	float A,B,C,D,E,F,X,Y;
+	do{
+	cout << "Ingrese el coeficiente A: " ;
+	cin >> A ;
+	}while(A==0);
+	cout << "Ingrese el coeficiente B: " ;
+	cin >> B ;
+	cout << "Ingrese el coeficiente C: " ;
+	cin >> C ;
+	cout << "Ingrese el coeficiente D: " ;
+	cin >> D ;
+	cout << "Ingrese el coeficiente E: " ;
+	cin >> E ;
+	cout << "Ingrese el coeficiente F: " ;
+	cin >> F ;
+	sistema(A,B,C,D,E,F,X,Y);
+	cout << " X = " << X << " y Y = " << Y ;
+    getch();
+}
+
+void sistema(float a,float b,float c,float d,float e,float f,float &X,float &Y){
+Y = (a*f-c*d)/(b*d-a*e);
+X = (-(b*Y+c))/a ;
+}
