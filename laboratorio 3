@@ -16,19 +16,23 @@ bool verifesprimo(int numero);
 void main()
 {
 	int N,V[MAX];
-	//float v[MAX],m;
-	/*string nombre[MAX];
+	float v[MAX],m;
+	string nombre[MAX];
+	do{
 	cout << "Ingrese el numero de estudiantes " ;
 	cin >> N;
+	}while(N<0 || N>MAX);
 	cargarnombre(nombre,N);
 	cargarnotas(v,N);
 	media(v,N,m);
 	cout << "La media es : " << m << endl;
-	mostrardiferencia(nombre,v,N,m);*/
+	mostrardiferencia(nombre,v,N,m);
+	/*do{
 	cout << "numero de elementos: " ;
 	cin >> N;
+	}while(N<0  || N > MAX);
 	cargarvector(V,N);
-	eliminarprimos(V,N);
+	eliminarprimos(V,N);*/
     getch();
 }
 
